@@ -1,89 +1,78 @@
-🛡️ HAMZXA1 Security Tool
+# 🛡️ HAMZXA1 Security Tool
 
-A lightweight Windows security utility built to detect, clean, and remove common USB and System32-based malware.
-Designed with a modern interface using Tkinter and focused on aggressive but safe threat removal.
+HAMZXA1 Security Tool is a powerful **Windows security application** designed to detect and completely remove advanced malware, rootkits, and USB shortcut viruses.
 
-📌 Features
-🔍 System Scanner
+The tool is delivered as a **standalone EXE**, built for deep system cleaning with administrator-level operations and a clear, controlled user interface.
 
-Detects malicious folders like wsvcz.
+---
 
-Identifies suspicious u#####.dll files in System32.
+## 🔥 Key Capabilities
 
-Allows:
+### 💻 System Scanner
+- Detects advanced and polymorphic malware inside System32
+- Identifies disguised executable, DLL, and data file threats
+- Targets known rootkit patterns and suspicious system files
 
-Immediate aggressive deletion
+### 💥 Instant Annihilation Engine
+- Multi-stage malware destruction process
+- Terminates active processes and loaded modules
+- Removes malicious services and scheduled tasks
+- Fully cleans registry persistence (Run, IFEO, Winlogon, BHOs)
+- Takes ownership of protected files before deletion
 
-Schedule deletion on next reboot
+### 💾 USB Cleaner
+- Detects USB shortcut virus infections
+- Removes malicious folders and shortcuts
+- Restores hidden user files automatically
+- Cleans file attributes safely
 
-💾 USB Cleaner
+---
 
-Removes shortcut-virus infections.
+## 🖥️ User Interface
 
-Restores hidden files from USB drives.
+- Clean and focused Windows GUI
+- Real-time activity log
+- Clear confirmation prompts before destructive actions
+- Designed for technical users and system maintenance
 
-Removes malicious folders (e.g., sysvolume).
+---
 
-Fixes attributes (read-only, system, hidden).
+## 🚀 How to Use
 
-🧰 Core Capabilities
+1. Run **HAMZXA1 Security Tool.exe** as **Administrator**
+2. Choose between:
+   - **System Scanner**
+   - **USB Cleaner**
+3. Review detected threats
+4. Confirm actions when prompted
+5. Follow on-screen logs for progress and results
 
-Ownership-taking to bypass protected files.
+No installation required.
 
-Kills processes locking a file.
+---
 
-Cleans attributes before performing deletion.
+## ⚠️ Important Notes
 
-Logs all actions to HAMZXA1_log.txt.
+- Administrator privileges are required
+- This tool performs deep system-level operations
+- Restarting the system after cleaning is recommended
+- Intended for experienced users and technicians
 
-🎨 Modern UI
+---
 
-Dark theme
+## 💻 Supported Systems
 
-Clean card-based layout
+- Windows 10
+- Windows 11
 
-Real-time action logs
+---
 
-Update checker integrated with GitHub
+## 👨‍💻 Developer
 
-🚀 How to Run
+**Hamza Alfarhood**
 
-Install Python 3.10+
+---
 
-Install required modules:
+## 📜 License
 
-pip install psutil
-
-
-Run the tool:
-
-python HAMZXA1.py
-
-📦 Build EXE (Optional)
-
-Using PyInstaller:
-
-pyinstaller --noconfirm --onefile --windowed --icon=icon.ico HAMZXA1.py
-
-
-If your exe uses resources (icons, images):
-
-pyinstaller --noconfirm --windowed --add-data "icon.ico;." HAMZXA1.py
-
-📄 Log File
-
-All actions are logged in:
-
-HAMZXA1_log.txt
-
-
-Useful for debugging or checking what operations were done.
-
-📬 Updates
-
-The tool checks for updates automatically through GitHub.
-
-⚠️ Disclaimer
-
-This tool is intended for educational and personal use only.
-Use responsibly and at your own risk.
+Provided as-is for educational, research, and personal system recovery use.
